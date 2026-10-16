@@ -1,10 +1,11 @@
 # 🐿️ Squirrel Desk Pet
 
 내 책상에 사는 다람쥐 — [Clawd on Desk](https://github.com/sinnarasam/clawd-on-desk)용 커스텀 테마
+A chipmunk desk-pet theme for Clawd on Desk, built with AI-generated art and custom Python compositing.
 
 `AI 생성 아트웍` `GIF 11종` `clawd-on-desk 커스텀 테마` `개인 프로젝트`
 
-![idle](theme_squirrel/assets/idle.gif) ![thinking](theme_squirrel/assets/thinking.gif) ![working](theme_squirrel/assets/working.gif) ![happy](theme_squirrel/assets/attention.gif)
+![idle](theme_squirrel/assets/idle.gif) ![thinking](theme_squirrel/assets/thinking.gif) ![working](theme_squirrel/assets/working.gif) ![attention](theme_squirrel/assets/attention.gif)
 
 ## 1. 소개
 
@@ -23,7 +24,7 @@ AI 코딩 에이전트(Claude Code 등)의 작업 상태를 데스크톱에서 �
 | idle | ![idle](theme_squirrel/assets/idle.gif) | 아무 활동이 없을 때 |
 | thinking | ![thinking](theme_squirrel/assets/thinking.gif) | 메시지를 보낸 직후 |
 | working | ![working](theme_squirrel/assets/working.gif) | 에이전트가 작업 중일 때 |
-| attention | ![attention](theme_squirrel/assets/attention.gif) | 답변이 끝났을 때 |
+| attention (Stop) | ![attention](theme_squirrel/assets/attention.gif) | 답변이 끝났을 때 |
 | notification | ![notification](theme_squirrel/assets/notification.gif) | 권한 요청이 떴을 때 |
 | error | ![error](theme_squirrel/assets/error.gif) | 도구 실행이 실패했을 때 |
 | sleeping / waking | ![sleeping](theme_squirrel/assets/sleeping.gif) | 60초 이상 조용할 때 / 깨어날 때 |
@@ -61,7 +62,4 @@ tools/                  제작에 쓴 Python 스크립트
 
 ## 6. 출처와 라이선스
 
-- 캐릭터 그림: Google Gemini로 생성. Gemini 이용약관을 따른다.
-- 제작 스크립트(`tools/`): 자유롭게 참고·수정해도 된다.
-- 기반 앱 [Clawd on Desk](https://github.com/sinnarasam/clawd-on-desk)는 AGPL-3.0이며, 이 저장소는 그 앱의 소스 코드를 포함하지 않는다.
-- 개인용으로 만들었다. 상업적 사용 전에는 위 조건을 각자 다시 확인할 것을 권한다.
+구성 요소마다 권리 관계가 달라 [LICENSE.md](LICENSE.md)에 따로 정리했다. 요약하면 스크립트는 MIT, 그림은 AI 생성(개인용 공개), 기반 앱 [Clawd on Desk](https://github.com/sinnarasam/clawd-on-desk)는 AGPL-3.0이며 이 저장소는 그 앱의 소스 코드를 포함하지 않는다.
