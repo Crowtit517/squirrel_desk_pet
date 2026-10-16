@@ -1,0 +1,8 @@
+reference/
+test_states/
+frames/
+gemini/
+run.gif
+run.apng
+__pycache__/
+*.pyc

@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "name": "Squirrel",
+  "author": "personal",
+  "version": "1.0.0",
+  "description": "A chipmunk desk pet (AI-generated frames, normalized to one canvas)",
+  "customization": {
+    "petTint": false
+  },
+
+  "viewBox": { "x": 0, "y": 0, "width": 176, "height": 135 },
+
+  "layout": {
+    "contentBox": { "x": 43, "y": 36, "width": 105, "height": 93 },
+    "centerX": 95.5,
+    "baselineY": 129,
+    "visibleHeightRatio": 0.45,
+    "baselineBottomRatio": 0.05
+  },
+
+  "eyeTracking": {
+    "enabled": false
+  },
+
+  "states": {
+    "idle": ["idle.gif"],
+    "thinking": ["thinking.gif"],
+    "working": ["working.gif"],
+    "juggling": ["conducting.gif"],
+    "error": ["error.gif"],
+    "attention": ["conducting.gif"],
+    "notification": ["notification.gif"],
+    "carrying": { "fallbackTo": "attention" },
+    "sweeping": { "fallbackTo": "attention" },
+    "roam": ["react-drag-right.gif"],
+    "sleeping": ["sleeping.gif"],
+    "waking": ["waking.gif"]
+  },
+
+  "sleepSequence": { "mode": "direct" },
+
+  "workingTiers": [
+    { "minSessions": 3, "file": "building.gif" },
+    { "minSessions": 1, "file": "working.gif" }
+  ],
+
+  "jugglingTiers": [
+    { "minSessions": 1, "file": "conducting.gif" }
+  ],
+
+  "timings": {
+    "minDisplay": { "attention": 5000, "error": 5000, "notification": 5200, "working": 1000, "thinking": 1000 },
+    "autoReturn": { "attention": 5000, "error": 5000, "notification": 5200 },
+    "mouseIdleTimeout": 20000,
+    "mouseSleepTimeout": 60000
+  },
+
+  "hitBoxes": {
+    "default": { "x": 50, "y": 40, "w": 95, "h": 90 },
+    "sleeping": { "x": 42, "y": 70, "w": 108, "h": 60 }
+  },
+  "sleepingHitboxFiles": ["sleeping.gif"],
+
+  "reactions": {
+    "drag": {
+      "file": "react-drag.gif",
+      "fileLeft": "react-drag-left.gif",
+      "fileRight": "react-drag-right.gif"
+    }
+  },
+
+  "sounds": {
+    "complete": null,
+    "confirm": null
+  },
+
+  "miniMode": { "supported": false },
+
+  "objectScale": {
+    "widthRatio": 1.9,
+    "heightRatio": 1.3,
+    "offsetX": -0.45,
+    "offsetY": -0.25
+  }
+}
